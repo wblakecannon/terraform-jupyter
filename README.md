@@ -44,6 +44,25 @@ For more information see:
 * [Creating an IAM User in Your AWS Account](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html)
 * [Create a Shared Credentials File](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/create-shared-credentials-file.html)
 
+## File Structure
+```
+.
+├── main.tf
+├── output.tf
+├── script.sh
+└── var.tf
+```
+
+### main.tf
+This is the *main* Terraform file. It includes all the resources created in AWS.
+
+### output.tf
+This is where you can have Terraform output certain attributes after it has completed running.
+
+### var.tf
+This is where Terraform stores variables used in `main.tf`.
+
+
 ## Running the Terraform Script
 
 1. Navigate to this repo in your Terminal app.
