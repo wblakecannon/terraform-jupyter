@@ -1,8 +1,9 @@
 # terraform-jupyter
-Automated Jupyter notebook deployment in AWS using Terraform. This code assumes you're using a pretty vanilla AWS account. i.e. default VPCs, subnets, etc.
+Automated Jupyter notebook deployment in AWS using [Terraform](https://www.terraform.io). 
+
+This guide assumes you have some basic knowledge of AWS, have an AWS account, have a shared credentials file, etc. This code also assumes you're using a pretty vanilla AWS account. i.e. default VPCs, subnets, etc. However, no Terraform knowledge is required to get up and running. If you want to learn more about Terraform, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
 
 ## What this Terraform script does
-
 This Terraform will do the following automatically:
 
 1. Creates a key-pair and put it in your working directory.
@@ -59,3 +60,7 @@ For more information see:
 1. Start up the Jupyter Notebook server by running the command `jupyter notebook`.
 1. You'll see a URL. For example, `http://ec2-34-211-106-166.us-west-2.compute.amazonaws.com:8888/?token=6508a10c1b80248fd3537d0a98bc62a65b55e0aca402adba`. Copy and paste that link in your browser. Jupyter Notebook will load.
 1. Happy coding!
+
+## About the State File
+
+Note that the Terraform state file is `local`. That's not always a good idea. However, I left it as `local` cause that's the easiest way to distribute working Terraform code. I suggest keeping your State file in an AWS S3 repository. For more information, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
