@@ -30,7 +30,7 @@ After installing [HomeBrew](https://brew.sh), run `brew install terraform` in th
 ### Linux Users:
 Linux users should use [LinuxBrew](https://docs.brew.sh/Homebrew-on-Linux). Follow the installation instructions from that website if you are a Linux user. It's a little more cumbersome than the MacOS installation, so I'm going to leave the steps out.
 
-After installing [LinuxBrew](https://docs.brew.sh/Homebrew-on-Linux), run 'brew install terraform' in the Terminal application of your choice.
+After installing [LinuxBrew](https://docs.brew.sh/Homebrew-on-Linux), run `brew install terraform` in the Terminal application of your choice.
 
 ### Windows Users
 Windows users; you're on your own. I don't use Windows. Find some documentation online and figure it out yourself. :)
