@@ -6,7 +6,7 @@ This guide assumes you have some basic knowledge of AWS, have an AWS account, ha
 ## What this Terraform script does
 This Terraform will do the following automatically:
 
-1. Creates a key-pair and put it in your working directory.
+1. Creates a key-pair and puts it in your working directory.
 1. Creates a AWS Security Group that is pre-configured for Jupyter Notebooks.
 1. Creates a AWS Instance using the latest Amazon Linux 2 AMI.
 1. Creates a EBS volume for [Anaconda](https://www.anaconda.com) Python distribution.
@@ -58,6 +58,16 @@ This is the *main* Terraform file. It includes all the resources created in AWS.
 
 ### output.tf
 This is where you can have Terraform output certain attributes after it has completed running.
+
+### script.sh
+This is a bash shell script that executes when the EC2 instance is created. It does some lower level Linux stuff and takes care of:
+
+1. Creating a log file for debugging.
+1. Updates Amazon Linux 2 packages.
+1. Mounts the EBS volume as `/anaconda3`.
+1. Edits the `fstab` file inside Amazon Linux 2 to ensure the volume is not lost during a reboot.
+1. Downloads and installs Anaconda.
+1. Creates and configures the Jupyter Notebook config file to make Jupyter Notebook AWS friendly.
 
 ### var.tf
 This is where Terraform stores variables used in `main.tf`.
