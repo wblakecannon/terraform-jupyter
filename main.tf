@@ -1,6 +1,5 @@
 provider "aws" {
   region  = "us-west-2"
-  profile = "caprinomics"
 }
 
 data "aws_ami" "al2" {
