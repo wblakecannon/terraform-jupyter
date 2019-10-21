@@ -79,7 +79,7 @@ This is a bash shell script that executes when the EC2 instance is created. It d
 1. Creating a log file for debugging.
 1. Updates Amazon Linux 2 packages.
 1. Mounts the EBS volume as `/anaconda3`.
-1. Edits the `fstab` file inside Amazon Linux 2 to ensure the volume is not lost during a reboot.
+1. Edits the `fstab` file inside Amazon Linux 2 to ensure the volume is mounted after a reboot.
 1. Downloads and installs Anaconda.
 1. Creates and configures the Jupyter Notebook config file to make Jupyter Notebook AWS friendly.
 
