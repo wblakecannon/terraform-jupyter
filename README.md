@@ -89,6 +89,7 @@ This is where Terraform stores variables used in `main.tf`.
 1. Start up the Jupyter Notebook server by running the command `jupyter notebook`.
 1. You'll see a URL. For example, `http://ec2-34-211-106-166.us-west-2.compute.amazonaws.com:8888/?token=6508a10c1b80248fd3537d0a98bc62a65b55e0aca402adba`. Copy and paste that link in your browser. Jupyter Notebook will load.
 1. Happy coding!
+1. When you're done, run the command `terraform destroy` and it will destroy all the resources created by Terraform.
 
 ## About the State File
 
