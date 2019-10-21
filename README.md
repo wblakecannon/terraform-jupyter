@@ -99,13 +99,13 @@ This is where Terraform stores variables used in `main.tf`.
 1. Wait ~10 minutes for the start up script (`script.sh`) to complete. It takes time to download and install Anaconda, especially on a `t2.micro` instance.
 
 ## Connect to Your Instance and Run Jupyter Notebook.
-1. Connect to your instance by running the following command: `ssh -i <keyname>.pem ec2-user@<public-dns>`. The connection string is outputted by Terraform. You will be prompted *Are you sure you want to connect?* So, type `yes` and press enter/return.
+1. Connect to your instance by running the following command: `ssh -i "<keyname>.pem" ec2-user@<public-dns>`. The connection string is outputted by Terraform. You will be prompted *Are you sure you want to connect?* So, type `yes` and press enter/return.
 1. You'll see that you've entered your EC2 instance.
 1. Start up the Jupyter Notebook server by running the command `jupyter notebook`.
-1. You'll see a URL. For example, `http://ec2-34-211-106-166.us-west-2.compute.amazonaws.com:8888/?token=6508a10c1b80248fd3537d0a98bc62a65b55e0aca402adba`. Copy and paste that link in your browser. Jupyter Notebook will load.
+1. You'll see a URL. Copy and paste that link in your browser. Jupyter Notebook will load.
 1. Happy coding!
 1. When you're done, run the command `terraform destroy` and it will destroy all the resources created by Terraform.
 
 ## About the State File
 
-Note that the Terraform state file is `local`. That's not always a good idea. However, I left it as `local` cause that's the easiest way to distribute working Terraform code. I suggest keeping your State file in an AWS S3 bucket. For more information, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
+Note that the Terraform [state file](https://www.terraform.io/docs/state/index.html) is `local`. This is not always a good idea. However, I left it as `local` cause that's the easiest way to distribute working Terraform code. I suggest keeping your State file in an AWS S3 bucket. For more information, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
