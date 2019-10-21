@@ -5,6 +5,14 @@ Automated Jupyter notebook deployment in AWS using [Terraform](https://www.terra
 
 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
 
+The AWS instance will be running [Anaconda](https://www.anaconda.com/distribution/) distribution. I like Anaconda because it is the easiest way to perform Python/R data science and machine learning on Linux, Windows, and Mac OS X. With over 15 million users worldwide, it is the industry standard for developing, testing, and training on a single machine, enabling individual data scientists to:
+
+- Quickly download 1,500+ Python/R data science packages
+- Manage libraries, dependencies, and environments with [Conda](https://conda.io/docs/)
+- Develop and train machine learning and deep learning models with [scikit-learn](https://scikit-learn.org/stable/), [TensorFlow](https://www.tensorflow.org/), and [Theano](https://pypi.org/project/Theano/)
+- Analyze data with scalability and performance with [Dask](https://dask.org/), [NumPy](http://www.numpy.org/), [pandas](https://pandas.pydata.org/), and [Numba](http://numba.pydata.org/)
+- Visualize results with [Matplotlib](https://matplotlib.org/), [Bokeh](https://bokeh.pydata.org/en/latest/), [Datashader](http://datashader.org/), and [Holoviews](http://holoviews.org/)
+
 Many guides online show how to set up Jupyter Notebooks on AWS, however they're mostly ClickOps; not DevOps. They require clicking around the AWS GUI, making key-pairs, manually configuring security groups, manually configuring Jupyter config files in Vim, etc. Some of these guides have 12–15 steps. The goal of this article is to automate the process of launching Jupyter Notebooks on AWS with Terraform. This guide accomplishes exactly that. This guide will create the AWS infrastructure as code (IaC) in about 10 minutes by running a couple commands.
 
 This guide assumes you have some basic knowledge of AWS, have an AWS account, have a shared credentials file, etc. This code also assumes you're using a pretty vanilla AWS account. i.e. default VPCs, subnets, etc. However, no Terraform knowledge is required to get up and running. If you want to learn more about Terraform, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
