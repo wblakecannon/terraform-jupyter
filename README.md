@@ -99,7 +99,7 @@ This is where Terraform stores variables used in `main.tf`.
 1. Wait ~10 minutes for the start up script (`script.sh`) to complete. It takes time to download and install Anaconda, especially on a `t2.micro` instance.
 
 ## Connect to Your Instance and Run Jupyter Notebook.
-1. Connect to your instance by running the following command: `ssh -i <keyname>.pem ec2-user@<public-dns>` (The public DNS was outputted by Terraform for you and your key can simply be found by typeing `key-` and then hitting tab for it to auto complete. For example, the last time I ran this command it was `ssh -i "key-df8421c2-3302-de97-3d89-aa91f169cc38.pem" ec2-user@ec2-34-216-20-94.us-west-2.compute.amazonaws.com`. You will be prompted *Are you sure you want to connect?* So, type `yes` and press enter/return.
+1. Connect to your instance by running the following command: `ssh -i <keyname>.pem ec2-user@<public-dns>`. The connection string is outputted by Terraform. You will be prompted *Are you sure you want to connect?* So, type `yes` and press enter/return.
 1. You'll see that you've entered your EC2 instance.
 1. Start up the Jupyter Notebook server by running the command `jupyter notebook`.
 1. You'll see a URL. For example, `http://ec2-34-211-106-166.us-west-2.compute.amazonaws.com:8888/?token=6508a10c1b80248fd3537d0a98bc62a65b55e0aca402adba`. Copy and paste that link in your browser. Jupyter Notebook will load.
