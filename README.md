@@ -108,4 +108,4 @@ This is where Terraform stores variables used in `main.tf`.
 
 ## About the State File
 
-Note that the Terraform state file is `local`. That's not always a good idea. However, I left it as `local` cause that's the easiest way to distribute working Terraform code. I suggest keeping your State file in an AWS S3 repository. For more information, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
+Note that the Terraform state file is `local`. That's not always a good idea. However, I left it as `local` cause that's the easiest way to distribute working Terraform code. I suggest keeping your State file in an AWS S3 bucket. For more information, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
