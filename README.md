@@ -82,6 +82,7 @@ This is where Terraform stores variables used in `main.tf`.
 ## Running the Terraform Script
 
 1. Navigate to this repo in your Terminal app.
+1. First you will have to initialize terraform by running the command `terraform init`.
 1. Run the command `terraform plan -out=terraform.plan`.
 1. You can see a preview of all the resources Terraform will create.
 1. Run the command `terraform apply "terraform.plan"`.
