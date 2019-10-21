@@ -1,6 +1,12 @@
 # terraform-jupyter
 Automated Jupyter notebook deployment in AWS using [Terraform](https://www.terraform.io). 
 
+"Thanks to its simplicity and power, Terraform has emerged as a key player in the DevOps world. It allows you to replace the tedious, fragile, and manual parts of infrastructure management with a solid automated foundation upon which you can build all your other DevOps practices and tooling." - Yevgeniy Brikman
+
+The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.
+
+Many guides online show how to set up Jupyter Notebooks on AWS, however they're mostly ClickOps; not DevOps. They require clicking around the AWS GUI, making key-pairs, manually configuring security groups, manually configuring Jupyter config files in Vim, etc. Some of these guides have 12–15 steps. The goal of this article is to automate the process of launching Jupyter Notebooks on AWS with Terraform. This guide accomplishes exactly that. This guide will create the AWS infrastructure as code (IaC) in about 10 minutes by running a couple commands.
+
 This guide assumes you have some basic knowledge of AWS, have an AWS account, have a shared credentials file, etc. This code also assumes you're using a pretty vanilla AWS account. i.e. default VPCs, subnets, etc. However, no Terraform knowledge is required to get up and running. If you want to learn more about Terraform, I **highly** recommend buying [Terraform Up and Running](https://www.amazon.com/Terraform-Running-Writing-Infrastructure-Code/dp/1492046906/ref=sr_1_1?keywords=terraform+up+and+running&qid=1571417701&sr=8-1) by Yevgeniy Brikman.
 
 ## What this Terraform script does
