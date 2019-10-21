@@ -94,7 +94,7 @@ This is where Terraform stores variables used in `main.tf`.
 1. You can see a preview of all the resources Terraform will create.
 1. Run the command `terraform apply "terraform.plan"`.
 1. You'll see Terraform creating resources. It will also place the access key-pair in your working directory for use with connecting to the ec2-instance with SSH.
-1. After Terraform has completed creating resources it will output the public DNS, which you'll also use to connect with SSH.
+1. After Terraform has completed creating resources it will output the connection string, which you'll use to connect with SSH.
 1. Wait ~10 minutes for the start up script (`script.sh`) to complete. It takes time to download and install Anaconda, especially on a `t2.micro` instance.
 
 ## Connect to Your Instance and Run Jupyter Notebook.
