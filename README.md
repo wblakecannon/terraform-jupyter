@@ -1,4 +1,4 @@
-# Automate Jupyter Notebook Deployment in AWS using [Terraform](https://www.terraform.io). 
+# Automate Jupyter Notebook Deployment in AWS Using [Terraform](https://www.terraform.io). 
 
 "Thanks to its simplicity and power, Terraform has emerged as a key player in the DevOps world. It allows you to replace the tedious, fragile, and manual parts of infrastructure management with a solid automated foundation upon which you can build all your other DevOps practices and tooling." - Yevgeniy Brikman
 
